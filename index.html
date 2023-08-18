@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="innerContainer">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <form>
+          <fieldset>
+            <label id="name-label">Name <input type="text" placeholder="Enter your name"  class="input box submit" required></label>
+            <label id="email-label">Email <input type="email" placeholder="Enter your email" class="input box submit" required></label>
+            <label id="number-label">Age <input type="number" placeholder="age" class="input box submit" required></label>
+          </fieldset>
+
+          <fieldset> 
+            <label>Which option best describes your current role?
+              <select id="dropdown" class="input box">
+                <option value="">select current role</option>
+                <option value="1">student</option>
+                <option value="2">full time job</option>
+                <option value="3">full time learner</option>
+                <option value="4">prefer not to say</option>
+                <option value="5">other</option>
+              </select>
+           </label>
+        </fieldset>
+
+        <fieldset>
+           <div>Would you recommend freeCodeCamp to a friend?</div>
+            
+            <label for="firstOpinion"><input type="radio" name="opinion" id="firstOpinion" class="inline" required>Definitely</label>
+            <label for="secondOpinion"><input type="radio" name="opinion"  id="secondOpinion" class="inline" required>Maybe</label>
+            <label for="thirdOpinion"><input type="radio" name="opinion" id="thirdOpinion" class="inline" required>Not sure</label>
+          
+        </fieldset>
+        <fieldset>
+          <label>What is your favorite feature of freeCodeCamp?
+            <select id="dropdown" class="input box">
+              <option value="">select an option</option>
+              <option value="1">challenges</option>
+              <option value="2">projects</option>
+              <option value="3">community</option>
+              <option value="4">open source</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>What would you like to see improved? (Check all that apply)</label>
+          <label for="firstCheckBox"><input type="checkbox" id="firstCheckBox" required>Front-end Projects</label>
+          <label for="secondCheckBox"><input type="checkbox" idr="secondCheckBox" required>Back-end Projects</label>
+          <label for="thirdCheckBox"><input type="checkbox" id="thirdCheckBox" required>Data Visualization</label>
+          <label for="forthCheckBox"><input type="checkbox" id="forthCheckBox" required>Challenges</label>
+          <label for="fifthCheckBox"><input type="checkbox" id="fifthCheckBox" required>Open Source Community</label>
+          <label for="sixCheckBox"><input type="checkbox" id="sixCheckBox" required>Gitter help rooms</label>
+          <label for="sevenCheckBox"><input type="checkbox" id="sevenCheckBox" required>Videos</label>
+          <label for="eightCheckBox"><input type="checkbox" id="eightCheckBox" required>City Meetups</label>
+          <label for="nineCheckBox"><input type="checkbox" id="nineCheckBox" required>Wiki</label>
+          <label for="tenCheckBox"><input type="checkbox" id="tenCheckBox" required>Forum</label>
+          <label for="elevenCheckBox"><input type="checkbox" id="elevenCheckBox" required>Additional Courses</label>
+        </fieldset>
+
+        <label for="bio">Any comments or suggestions?
+          <textarea name="bio" rows="3" cols="30" placeholder="Enter your comment here..." class="input"></textarea>
+        </label>
+        <input type="submit" value="Submit" class="input box submit"/>
+        </form>
+      </div>
+  </div>
+</body>
